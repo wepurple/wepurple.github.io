@@ -35,7 +35,7 @@ typewriter
 .changeDelay(20)
 .typeString('Moi c\'est Kilian Molière')
 .pauseFor(300)
-.typeString('<strong>, Développeur </strong> !')
+.typeString('<strong>, Apprenti Développeur </strong> !')
 .pauseFor(1000)
 .typeString('<span style="color: #27ae60;"> HTML</span> !')
 .pauseFor(1000)

@@ -73,12 +73,17 @@ body {
     box-shadow: 26px 26px 53px #292929,
                 -26px -26px 53px #3d3d3d;
 }
-.cercle-portrait img {
+img .cercle-portrait {
     width: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.effet:hover img { /* on arrondit l'image */
+  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  transform: rotate(360deg);
 }
 
 .logo-cercle {
@@ -192,7 +197,7 @@ body {
 /* ------------------ Accueil ---------------- */
 
 .accueil {
-    background: url(ressources/picture.jpg);
+    background: url(ressources/assets/picture.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -436,7 +441,7 @@ h1 {
 .titre-pres {
     font-size: 32px;
     text-align: center;
-    margin: 50px 0 70px 0;
+    margin: 20px 0 0px 0;
     padding-left: 300px;
     color: #FF5733;
 }
@@ -446,7 +451,7 @@ h1 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 130px 0;
+    margin: 0px 0 130px 0;
     flex-shrink: 0;
     padding-left: 300px;
 }
@@ -570,7 +575,19 @@ h1 {
 }
 .titre-port {
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0 20px;
+    font-size: 50px;
+    padding-left: 300px;
+}
+.titre-port2 {
+    text-align: center;
+    padding: 0px 0 70px;
+    font-size: 50px;
+    padding-left: 300px;
+}
+.titre-port3 {
+    text-align: center;
+    padding: 70px 0 70px;
     font-size: 50px;
     padding-left: 300px;
 }
@@ -585,7 +602,7 @@ h1 {
 .cont-portfolio {
     width: 100%;
     height: auto;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 10px auto;
     padding-left: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -663,6 +680,17 @@ h1 {
         margin: 50px 0 70px;
         padding-left: 0;
     }
+    .titre-port2 {
+        font-size: 40px;
+        margin: 50px 0 70px;
+        padding-left: 0;
+    }
+    .titre-port3 {
+        font-size: 40px;
+        margin: 50px 0 70px;
+        padding-left: 0;
+    }
+    
     .subtitre-port {
         font-size: 40px;
         margin: 50px 0 70px;
@@ -673,6 +701,14 @@ h1 {
 @media screen and (max-width: 500px) {
 
     .titre-port {
+        margin: 10px 0;
+        padding: 30px 0;
+    }
+    .titre-port2 {
+        margin: 10px 0;
+        padding: 30px 0;
+    }
+    .titre-port3 {
         margin: 10px 0;
         padding: 30px 0;
     }
@@ -746,24 +782,24 @@ h1 {
     border-radius: 5px;
 }
 .b1 {
-    width: 85%;
+    width: 30%;
 }
 .b2 {
-    width: 70%;
+    width: 25%;
     background: rgb(243,237,146);
 }
 .b3 {
-    width: 60%;
+    width: 20%;
     background: rgb(243,237,146);
 }
 .b4 {
-    width: 50%;
+    width: 20%;
 }
 .b5 {
-    width: 70%;
+    width: 40%;
 }
 .b6 {
-    width: 75%;
+    width: 35%;
     background: rgb(243,237,146);
 }
 .label-skill {
@@ -835,7 +871,7 @@ h1 {
     width: calc(100% - 300px);
     height: auto;
     margin-left: auto;
-    padding-bottom: 100px;
+    padding-bottom: 280px;
 }
 
 .titre-travail-exp {
@@ -969,7 +1005,7 @@ h1 {
 .section-parallax {
     width: 100%;
     height: 250px;
-    background: url(ressources/picture.jpg) no-repeat right / cover fixed;
+    background: url(ressources/assets/picture.jpg) no-repeat right / cover fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1140,4 +1176,36 @@ footer {
     footer {
         padding-left: 0px;
     }
+}
+
+.rss {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 100px auto;
+    padding-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 30%; 
+}
+
+.chien {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(180px*3);
+    height: calc(150px*3);
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.chien:hover {
+    width: calc(150px*3); /* on affiche l'image au carré */
+    height: calc(150px*3);
+    border-radius: 50%;  /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
 }

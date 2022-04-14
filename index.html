@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Kilian Molière</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ressources/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 </head>
 <body>
     
@@ -23,21 +25,30 @@
 
         <div class="blocs-menu">
             <div class="cercle-portrait">
-                <img src="ressources/boss.svg" alt="portrait img">
+                <a href="#accueil">
+                    <img class="cercle-portrait" src="ressources/assets/imgphoto.jpeg" alt="portrait img">
+                </a>
             </div>
         </div>
 
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#accueil">
-                    Accueil
+                <a href="#pres">
+                    Qui suis-je ?
                 </a>
             </span>
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#pres">
-                    BTS SIO 
+                <a href="#projets">
+                     Mes projets
+                </a> 
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#range">
+                    Compétences
                 </a>
             </span>
         </div>
@@ -50,22 +61,8 @@
         </div>
         <div class="blocs-menu">
             <span class="nav-menu-item">
-                <a href="#projets">
-                     Mes projets
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#range">
-                    Compétences
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#contact">
-                    Contact
+                <a href="ressources/download/CV_Kilian.pdf" target="_blank">
+                    Curriculum Vitae
                 </a>
             </span>
         </div>
@@ -75,7 +72,7 @@
         <div class="blocs-menu">
             <div class="logo-cercle">
                 <a href="#contact">
-                    <img src="ressources/contact.svg" alt="logo contact">
+                    <img src="ressources/assets/contact.svg" alt="logo contact">
                 </a>
             </div>
         </div>
@@ -89,28 +86,29 @@
         <p class="txt-animation"></p>
         <a href="#" class="btn-acc btn-acc1">Portfolio</a>
         <a href="#" class="btn-acc btn-acc2">Expériences</a>
+        <a href="./chien.html" class="btn-acc btn-acc2">Mon Chien</a>
 
         <div class="medias">
             <a href="https://github.com/wepurple" target="blank">
                 <div class="media media1">
-                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
+                    <img src="ressources/assets/github.svg" alt="github icone" class="icone-medias">
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/kilian-moli%C3%A8re-016b99231/" target="blank">
                 <div class="media media2">
-                    <img src="ressources/linkedin.svg" alt="linkedin icone" class="icone-medias">
+                    <img src="ressources/assets/linkedin.svg" alt="linkedin icone" class="icone-medias">
                 </div>
             </a>
             <a href="https://twitter.com/kilian_mlr" target="blank">
                 <div class="media media3">
-                    <img src="ressources/twitter.svg" alt="twitter icone" class="icone-medias">
+                    <img src="ressources/assets/twitter.svg" alt="twitter icone" class="icone-medias">
                 </div>
             </a>
         </div>
 
         <a href="#pres">
             <div class="btn-rond">
-                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+                <img src="ressources/assets/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
             </div>
         </a>
     </section>
@@ -119,20 +117,15 @@
 
 <section class="presentation" id="pres">
 
-    <h2 class="titre-pres">QU'EST CE QUE LE BTS SIO ?</h2>
+    <h2 class="titre-pres">Qui suis-je ?</h2>
 
     <div class="container-presentation">
 
         <div class="fond-forme"></div>
 
         <div class="pres-gauche">
-            <h3>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur.our par la suite intégrer directement le marché du travail ou continuer des études, dans le domaine de l'informatique.</h3>
-            <br>
-            <hr>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos quisquam rerum aliquam quasi vitae nisi expedita debitis cupiditate asperiores optio eveniet labore, vel beatae!</p>
-            <br>
-            <p>
+            <p>Je m'appelle Kilian Molière, j'ai 20 ans, j'habite a Ponthierry et je suis actuellement au lycée Leonard de Vinci en BTS SIO 2ème annéee. Je suis diplomée d'un bac STI2D Option EE</p>
+            <p>Je suis passionée d'hardware, .</p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere illum ullam exercitationem praesentium veniam?
             </p>
         </div>
@@ -153,37 +146,61 @@
 
     <div class="cont-portfolio">
 
+        
+
 
         <div class="item vague1">
             <div class="cont-img-port">
-                <img src="ressources/sushi2.jpeg" alt="img portfolio">
+                <img src="ressources/Project/sushi.jpeg" alt="img portfolio">
             </div>
             <h3>Sushi fast </h3>
             <p>Une plateforme en ligne permettant l'achat de sushi.</p>
-            <a href="#" class="btn-projets">En avant !</a>
+            <a href="https://github.com/BTSIOAlternant/SushiFast" target="_blank" class="btn-projets">En avant !</a>
+        </div>
+
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/Project/vetux.png" alt="img portfolio">
+            </div>
+            <h3>Vetux line</h3>
+            <p>Permet de mélanger des cartes, effectuer un trie .....</p>
+            <a href="https://github.com/BTSIOAlternant/Vetux-line" target="_blank" class="btn-projets">En avant !</a>
         </div>
 
         <div class="item vague1">
             <div class="cont-img-port">
-                <img src="ressources/BLB.jpg" alt="img portfolio">
+                <img src="ressources/Project/carte.jpeg" alt="img portfolio">
+            </div>
+            <h3>GuessWhat</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
+            <a href="https://github.com/wepurple/Projet-GuessWhat" target="_blank" class="btn-projets">En avant !</a>
+        </div>
+
+</section>
+
+<!-- Section projets pro -->
+
+<section class="portfolio" id="projets">
+
+
+    <h2 class="titre-port2">Mes projets professionnels</h2>
+
+        
+            
+            <div class="item vague2">
+            <div class="cont-img-port">
+                <img src="ressources/Project/BLB.jpg" alt="img portfolio">
             </div>
             <h3>BLB</h3>
             <p>Création d'une application mobile destiné aux clients de l'entreprise.</p>
-            <a href="#" class="btn-projets">En avant !</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/vetuxline.jpg" alt="img portfolio">
-            </div>
-            <h3>Vetux line</h3>
-            <p>Permet de mélanger des cartes ect...</p>
-            <a href="#" class="btn-projets">En avant !</a>
+            <a href="#" target="_blank" class="btn-projets">En avant !</a>
         </div>
 
     
-
+    
 </section>
+
 
 
 <!-- Section Range -->
@@ -192,24 +209,25 @@
 
     <h2 class="titre-exp">Mes compétences</h2>
 
+
     <div class="grille-skill">
 
-
+        
         <div class="range-cont">
             <p class="label-skill">Flutter</p>
-            <p class="number-skill">85%</p>
+            <p class="number-skill">30%</p>
             <div class="barre-skill b1"></div>
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
             <p class="label-skill">HTML</p>
-            <p class="number-skill">70%</p>
+            <p class="number-skill">25%</p>
             <div class="barre-skill b2"></div>
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
             <p class="label-skill">CSS</p>
-            <p class="number-skill">60%</p>
+            <p class="number-skill">20%</p>
             <div class="barre-skill b3"></div>
             <div class="barre-grises"></div>
         </div>
@@ -217,19 +235,19 @@
 
         <div class="range-cont">
             <p class="label-skill">Java Script</p>
-            <p class="number-skill">50%</p>
+            <p class="number-skill">20%</p>
             <div class="barre-skill b4"></div>
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
             <p class="label-skill">Wordpress</p>
-            <p class="number-skill">70%</p>
+            <p class="number-skill">40%</p>
             <div class="barre-skill b5"></div>
             <div class="barre-grises"></div>
         </div>
         <div class="range-cont">
             <p class="label-skill">PhpMyAdmin</p>
-            <p class="number-skill">75%</p>
+            <p class="number-skill">35%</p>
             <div class="barre-skill b6"></div>
             <div class="barre-grises"></div>
         </div>
@@ -248,18 +266,6 @@
     <h2 class="titre-travail-exp">Mes expériences</h2>
 
     <div class="cont-exp-travail">
-
-        <div class="barre-verticale">
-            <div class="boule-ico">
-                <img src="ressources/blbsvg.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/instagram.svg" alt="icone gauche">
-            </div>
-            <div class="boule-ico">
-                <img src="ressources/amazon.svg" alt="icone gauche">
-            </div>
-        </div>
 
 
         <div class="flex-cont-bloc-exp">
@@ -289,49 +295,6 @@
 
 </section>
 
-<!-- Section Veille -->
-
-<section class="portfolio" id="veilletechno">
-
-
-    <h2 class="titre-port">Veille technologique</h2>
-
-    <div class="cont-portfolio">
-
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/bootstrap.jpg" alt="img portfolio">
-            </div>  
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrir !</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/console.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrir !</a>
-        </div>
-
-        <div class="item vague1">
-            <div class="cont-img-port">
-                <img src="ressources/animcss.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Découvrir !</a>
-        </div>
-
-    </div>
-
-
-</section>
-
-
 
 <!-- Section Parallax -->
 
@@ -346,6 +309,20 @@
         1 clients
     </p>
 </div>
+
+<!-- Section Veille -->
+
+<section class="portfolio" id="veilletechno">
+
+    <h2 class="titre-port3">Veille technologique</h2>
+   
+    <div class="rss">
+        <!-- <rssapp-wall id="yZ5GuyPOIWkYAaUF"></rssapp-wall> -->
+        <iframe width="1000" height="750" src="https://rss.app/embed/v1/wall/yZ5GuyPOIWkYAaUF" frameborder="0"></iframe>
+    </div>
+</section>
+
+  
 
 
 <!-- Section Contact -->
